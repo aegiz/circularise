@@ -3,10 +3,11 @@
 }
 
 .beautiful-new-container {
+	margin: 100px 0 0 0;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .info-container {
@@ -18,9 +19,35 @@
 }
 
 .info-container p {
+	margin: 20px 0 30px;
 	text-align: left !important;
 	font-size: 1.2em;
 	line-height: 1.3em;
+}
+
+.info-container .button-container button {
+	-webkit-font-smoothing: subpixel-antialiased;
+	background: transparent;
+	display: inline-block;
+	text-decoration: none;
+	appearance: none;
+	padding: 21px 34px;
+	font-family: freight-sans-pro;
+	font-size: 15px;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 2px solid rgba(0, 0, 0, 0.9);
+	transition: all 0.1s linear;
+	color: rgba(0, 0, 0, 0.9);
+	border-radius: 300px;
+	line-height: 1.2em;
+}
+
+.info-container .button-container button:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
 }
 
 @keyframes initAnimation {
@@ -32,9 +59,16 @@
 	}
 }
 
+.book-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 600px;
+}
+
 .book {
-	width: 200px;
-	height: 300px;
+	width: 225px;
+	height: 350px;
 	position: relative;
 	transform-style: preserve-3d;
 	transform: rotateY(-23deg);
@@ -105,4 +139,24 @@
 	background-color: #01060f;
 	border-radius: 0 2px 2px 0;
 	box-shadow: -10px 0 50px 10px #666;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media only screen and (max-width: 640px) {
+	.beautiful-new-container {
+		margin: 40px 0 0 0;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.info-container {
+		padding: 0;
+	}
+	.info-container h2,
+	.info-container p {
+		text-align: center !important;
+	}
 }

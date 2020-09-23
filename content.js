@@ -1,7 +1,6 @@
-/* TODO
- * 1. Cutting off the extra text in the intro and reorganised as paragraphs for lisibility.
- * 2. Adding a 3D book image to make it look more appealing.
- * 3. Add a cookie Banner to be compliant with the EU regulation.
+/* New features:
+ * - Rework of the first section (of the Technology page)
+ * - (TODO) Addition of a cookie Banner to be compliant with the EU regulation.
  */
 
 document.addEventListener("DOMContentLoaded", fireContentLoadedEvent, false);
@@ -16,12 +15,11 @@ function fireContentLoadedEvent() {
 	var title = container.querySelector("h2");
 	var text = container.querySelector("p");
 
-	// 1. Modify the text for lisibility
+	// Modify the text for lisibility
 	text.innerHTML =
 		"Circularise utilises a combination of blockchain, peer-to-peer technology and cryptographic techniques like Zero-Knowledge Proofs (ZKPs) to build a decentralised information storage and communication platform.<br><br>The goal is to allow information exchange between participants in value chains while allowing them to remain anonymous and fine-tune the amount of information they want to disclose, and who can access it.";
 
-	// 2. Adding a 3D book image to make it look more appealing.
-
+	// Adding a 3D book image to make it look more appealing.
 	container.classList.add("beautiful-new-container");
 
 	var infoContainer = document.createElement("div");
@@ -47,4 +45,19 @@ function fireContentLoadedEvent() {
 	container.innerHTML = "";
 	container.insertBefore(infoContainer, container.firstChild);
 	container.insertBefore(coverContainer, container.firstChild);
+
+	// Create button and remove the old one
+	var buttonContainer = document.createElement("a");
+	buttonContainer.href = "/whitepaper";
+	buttonContainer.classList.add("button-container");
+	var button = document.createElement("button");
+	button.innerHTML = "Read Our Whitepaper";
+	buttonContainer.append(button);
+	infoContainer.append(buttonContainer);
+
+	// Removing useless divs
+	var oldSpacer = document.querySelector(".sqs-row");
+	oldSpacer.remove();
+	var oldButton = document.querySelector(".sqs-block-button");
+	oldButton.remove();
 }

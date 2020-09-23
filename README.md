@@ -3,13 +3,15 @@
 The objective of this project is to improve the [Technology page](https://www.circularise.com/technology) of circularise.com.
 On the technical side I used a Chrome extension to insert the HTML, CSS and JS when the page loads.
 
-## Demo:
+## Demo (TODO):
 
 ![demo](demo/demo_1.gif)
 
 ## Features:
 
--  TODO
+-  Rework of the first section (of the Technology page).
+-  Addition of a cookie Banner to be compliant with the EU regulation.
+-  Fully responsive
 
 ## Dev stack
 
