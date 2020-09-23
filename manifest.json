@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Circularise Solutions Improvements",
+	"version": "0.1.0",
+	"description": "Circularise demo",
+	"content_scripts": [
+		{
+			"css": ["styles.css"],
+			"js": ["content.js"],
+			"matches": ["https://www.circularise.com/technology"],
+			"run_at": "document_start"
+		}
+	],
+	"browser_action": {
+		"default_icon": "icon/transparent.png"
+	}
+}
