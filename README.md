@@ -1,9 +1,9 @@
-# Circularise /technology page improvements
+# Circularise "/technology" page first section rework
 
-The objective of this project is to improve the [Technology page](https://www.circularise.com/technology) of circularise.com.
+The objective of this project is to improve the first section of the [Technology page](https://www.circularise.com/technology) on circularise.com.
 On the technical side I used a Chrome extension to insert the HTML, CSS and JS when the page loads.
 
-## Demo (TODO):
+## Demo:
 
 ![demo](demo/demo.gif)
 
@@ -17,7 +17,7 @@ On the technical side I used a Chrome extension to insert the HTML, CSS and JS w
 -  JavaScript
 -  CSS
 
-## Project Structure (TODO)
+## Project Structure:
 
 ```sh
 .
