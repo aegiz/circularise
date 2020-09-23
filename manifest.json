@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Circularise Solutions Improvements",
+	"name": "Circularise Improvements",
 	"version": "0.1.0",
-	"description": "Circularise demo",
+	"description": "A chrome extension that modifies and improves the Circularise technology page.",
 	"content_scripts": [
 		{
 			"css": ["styles.css"],

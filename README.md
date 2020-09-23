@@ -1,6 +1,6 @@
-# W.Green agency theme switcher
+# Circularise /technology page improvements
 
-The objective of this project is to provide CTA on wgreen.org to switch themes easily.
+The objective of this project is to improve the [Technology page](https://www.circularise.com/technology) of circularise.com.
 On the technical side I used a Chrome extension to insert the HTML, CSS and JS when the page loads.
 
 ## Demo:
@@ -9,16 +9,14 @@ On the technical side I used a Chrome extension to insert the HTML, CSS and JS w
 
 ## Features:
 
--  Switch automatically to dark theme if its the user OS preferences.
--  3 different themes available (classic, dark, greener).
--  Persist accross pages.
+-  TODO
 
 ## Dev stack
 
 -  JavaScript
 -  CSS
 
-## Project Structure
+## Project Structure (TODO)
 
 ```sh
 .
@@ -41,11 +39,8 @@ Install this Chrome extension manually:
 1. Download the content of this folder on Github
 2. Then type in your URL: chrome://extensions/
 3. Drag and drop the folder there and activate the extension.
-4. Go to https://www.wgreen.org, you should now be able to see a theme switcher.
+4. Go to [circularise.com/technology](https://www.circularise.com/technology), you should now be able to see the changes.
 
 ## Inspiration and resources:
 
--  https://www.wgreen.org
--  https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
--  https://mxb.dev/blog/color-theme-switcher/
--  https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/
+-  https://www.circularise.com/technology
