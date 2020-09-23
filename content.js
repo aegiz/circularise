@@ -1,6 +1,5 @@
-/* New features:
- * - Rework of the first section (of the Technology page)
- * - (TODO) Addition of a cookie Banner to be compliant with the EU regulation.
+/*
+ * Rework of the first section (of the Technology page)
  */
 
 document.addEventListener("DOMContentLoaded", fireContentLoadedEvent, false);
@@ -28,7 +27,6 @@ function fireContentLoadedEvent() {
 
 	var coverContainer = document.createElement("div");
 	coverContainer.classList.add("cover-container");
-
 	coverContainer.innerHTML = `<a 
 		class="book-container"
 		href="/whitepaper"
@@ -40,7 +38,7 @@ function fireContentLoadedEvent() {
 				/>
 		</div>
 	</a>`;
-	debugger;
+
 	container.innerHTML = "";
 	container.insertBefore(infoContainer, container.firstChild);
 	container.insertBefore(coverContainer, container.firstChild);

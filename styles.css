@@ -148,6 +148,56 @@
 	box-shadow: -10px 0 50px 10px #666;
 }
 
+.cookie-banner-container {
+	position: fixed;
+	bottom: 0;
+	color: #212529;
+	width: 100%;
+	padding: 16px 0;
+	z-index: 10;
+	background: #ffffff;
+	box-shadow: 0px 4px 13px 0px rgba(57, 57, 57, 0.38);
+	text-align: center;
+}
+
+.cookie-text {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.cookie-text--hidden {
+	display: none;
+}
+
+.cookie-text a {
+	text-decoration: underline;
+}
+
+.cookie-text button {
+	background: transparent;
+	display: inline-block;
+	text-decoration: none;
+	appearance: none;
+	padding: 6px 12px;
+	margin: 0 0 0 10px;
+	font-family: freight-sans-pro;
+	font-size: 15px;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 2px solid rgba(0, 0, 0, 0.9);
+	transition: all 0.1s linear;
+	color: rgba(0, 0, 0, 0.9);
+	border-radius: 300px;
+	line-height: 1.2em;
+}
+
+.cookie-text button:focus {
+	outline: none;
+}
+
 /*
 MEDIA QUERIES
 */
