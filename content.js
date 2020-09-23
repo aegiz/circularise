@@ -28,20 +28,19 @@ function fireContentLoadedEvent() {
 
 	var coverContainer = document.createElement("div");
 	coverContainer.classList.add("cover-container");
+
 	coverContainer.innerHTML = `<a 
 		class="book-container"
-		href="https://theoutstanding.dev/"
-		target="_blank"
-		rel="noreferrer noopener"
+		href="/whitepaper"
 	>
 		<div class="book">
 			<img
-				alt="The Outstanding Developer by Sebastien Castiel"
-				src="https://3d-book-css.netlify.app/book-cover.76b99e5d.png"
+				alt="Read our whitepaper"
+				src="${chrome.runtime.getURL("assets/cover.png")}"
 				/>
 		</div>
 	</a>`;
-
+	debugger;
 	container.innerHTML = "";
 	container.insertBefore(infoContainer, container.firstChild);
 	container.insertBefore(coverContainer, container.firstChild);
